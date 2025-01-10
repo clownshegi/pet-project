@@ -3,20 +3,22 @@ import './App.css';
 
 function App() {
     const [tasks, setTasks] = useState([]);
-    const [taskText, setTaskText] = useState("");
+    const [taskText, setTaskText] = useState(""); // better newTaskText
 
+
+    //TODO: Check out useCallback and memoize functions 
     const addTask = () => {
-        if (taskText.trim() === "") return;
+        if (taskText.trim() === "") return; // good decision
         const newTask = {
             id: new Date().toISOString(),
             text: taskText
         };
-        setTasks([...tasks, newTask]);
+        setTasks([...tasks, newTask]); // prev ? 
         setTaskText("");
     };
 
     const deleteTask = (id) => {
-        setTasks(tasks.filter(task => task.id !== id));
+        setTasks(tasks.filter(task => task.id !== id)); // prev ? 
     };
 
     return (
@@ -38,7 +40,7 @@ function App() {
                     tasks.map((task, index) => (
                         <div key={task.id} className="task-item">
                             <span className="task-text">{task.text}</span>
-                            <span className="task-date">{new Date(task.id).toLocaleDateString()}</span>
+                            <span className="task-date">{new Date(task.id).toLocaleDateString()}</span> {/* better keep date and id separate, add new field date and work with it instead of id */}
                             <button onClick={() => deleteTask(task.id)}>Удалить</button>
                         </div>
                     ))
