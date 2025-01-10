@@ -1,6 +1,8 @@
+// Why tailwind config is here ? 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [], // why empty 
   theme: {
     extend: {},
   },

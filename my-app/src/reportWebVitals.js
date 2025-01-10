@@ -3,3 +3,5 @@ const reportWebVitals = (metric) => {
 };
 
 export default reportWebVitals;
+
+// Delete unused file
