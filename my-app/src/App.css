@@ -13,26 +13,26 @@
   }
 }
 
-.task-list-container {
-  max-height: 80vh;
-  overflow-y: auto;
-  padding-right: 10px;
-}
+/*.task-list-container {*/
+/*  max-height: 80vh;*/
+/*  overflow-y: auto;*/
+/*  padding-right: 10px;*/
+/*}*/
 
 
 
-.task-text {
-  text-decoration: underline;
-}
+/*.task-text {*/
+/*  text-decoration: underline;*/
+/*}*/
 
 
-.task-date {
-  font-weight: bold;
-  color: #007BFF;
-  background-color: #f0f0f0;
-  padding: 2px 5px;
-  border-radius: 3px;
-}
+/*.task-date {*/
+/*  font-weight: bold;*/
+/*  color: #007BFF;*/
+/*  background-color: #f0f0f0;*/
+/*  padding: 2px 5px;*/
+/*  border-radius: 3px;*/
+/*}*/
 
 
 
